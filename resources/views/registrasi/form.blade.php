@@ -32,7 +32,7 @@
             <h1 class="header">REGISTRATION FORM</h1>   
             <h6 class="headersubtext"><i>RUMAH SAKIT RUMAH SEHAT</i></h6>
             
-            <form action="/registrasi/submit" method="POST" id="form">
+            <form action="/user-create" method="POST" id="form">
                 @csrf
                 <div>
                     <label for="username"></label>    
@@ -42,7 +42,7 @@
 
                 <div>
                     <label for="nama"></label>
-                    <input type="text" name="nama" id="nama" placeholder="Nama Lengkap">
+                    <input type="text" name="namauser" id="namauser" placeholder="Nama Lengkap">
                     <label for="ErrorNama" id="ErrorNama" class="errortext"></label>
                 </div>
                 
@@ -77,6 +77,6 @@
             </div>
         </div>          
     </body>
-    <script type="text/javascript" src="/formScript.js"></script>
+    <script type="text/javascript" src="formScript.js"></script>
 </html>
 @endsection

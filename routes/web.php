@@ -72,3 +72,7 @@ Route::get('/dokter-add', [DokterViewController::class, 'create']);
 Route::post('/dokter-create', [DokterViewController::class, 'store']);
 Route::get('/dokter-edit/{id}', [DokterViewController::class, 'edit']);
 
+// Route::get('/user-add', [DokterViewController::class, 'create']);
+Route::post('/user-create', [UserViewController::class, 'store']);
+// Route::get('/user-edit/{id}', [DokterViewController::class, 'edit']);
+

@@ -40,6 +40,7 @@
                 // echo '<div class="dataoutput">'.$_POST["Password"].'</div>';
                 // echo "<br>";
             ?>
+            <button class=" btn btn-primary" style="background-color: #5ECD81; border-color:#5ECD81">Tambah Data</button>
             <div class="loader triangle" style="margin-top: 1%; margin-left: 90%; margin-bottom: -2%;">
                 <svg viewBox="0 0 86 80">
                     <polygon points="43 8 79 72 7 72"></polygon>
