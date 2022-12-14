@@ -1,9 +1,9 @@
 <?php
 
+use App\Http\Controllers\CrudController;
+use App\Http\Controllers\DokterViewController;
 use App\Http\Controllers\PoliController;
 use App\Http\Controllers\UserViewController;
-use App\Http\Controllers\DokterViewController;
-use App\Http\Controllers\CrudController;
 use App\Models\DokterView;
 use App\Models\Poli;
 use App\Models\UserView;
@@ -22,9 +22,29 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome', [
+    return view('form', [
             "title" => "Welcome"
     ]);
+});
+
+Route::get('/login', function () {
+    return view('login', [
+            "title" => "Login"
+    ]);
+});
+
+Route::prefix('registrasi')->group(function() {
+    Route::get('/daftar', function(){
+        return view('registrasi/form', [
+                "title" => "Registrasi"
+        ]);
+    });
+    
+    Route::post('/submit', function(){
+        return view('registrasi/submitregistrasi', [
+                "title" => "Registrasi"
+        ]);
+    });
 });
 
 Route::prefix('admin')->group(function() {
